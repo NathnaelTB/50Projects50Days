@@ -1,0 +1,71 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.num-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.number {
+  border: solid 3px #a2a2a2;
+  padding: 5px 10px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.active-number {
+    border: solid 3px #3498db;
+}
+
+.line {
+    width: 7rem;
+    height: 0.2rem;
+    background-color: #a2a2a2;
+    transition: 0.5s;
+}
+
+.active-line {
+    background-color: #3498db;
+}
+
+.btn {
+  padding: 10px;
+  width: 5rem;
+  border: 0px;
+  border-radius: 7px;
+  background-color: #a2a2a2;
+  color: white;
+}
+
+
+.active {
+    background-color: #3498db;
+    pointer-events: auto;
+}
+
+.unclickable {
+    pointer-events: auto;
+}
