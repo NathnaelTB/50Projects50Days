@@ -1,0 +1,51 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1s;
+}
+
+.rotated{
+    margin: 0;
+}
+
+.corner {
+    background-color: #f87e7e;
+    height: 10rem;
+    width:10rem;
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 5rem);
+    grid-template-rows: repeat(2, 5rem);
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+}
+
+.grid-item {
+    display: grid;
+    place-items: center;
+}
+
+
+i {
+    color: white;
+    font-size: 2rem;
+}
+
+.author{
+    font-style: italic;
+    font-weight: 100;
+}
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.rotator {
+    transform: rotate(-10deg);
+    transform-origin: top left;
+}
+
+.option-rotator {
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
