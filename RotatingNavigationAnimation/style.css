@@ -31,7 +31,6 @@ body {
     place-items: center;
 }
 
-
 i {
     color: white;
     font-size: 2rem;
@@ -54,4 +53,22 @@ i {
 .option-rotator {
     transform: rotate(-70deg);
     transform-origin: center;
+}
+
+.nav {
+    display: block;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: -12rem;
+    top: 60vh;
+}
+
+.nav-item {
+    margin: 1rem 0;
+}
+
+.nav-unrotate {
+    transform: rotate(20deg);
 }
