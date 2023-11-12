@@ -3,8 +3,14 @@
     transition: 1s;
 }
 
+body {
+    background-color: #444;
+    margin: 0;
+}
+
 .rotated{
     margin: 0;
+    background-color: white;
 }
 
 .corner {
@@ -41,11 +47,11 @@ i {
 }
 
 .rotator {
-    transform: rotate(-10deg);
+    transform: rotate(-20deg);
     transform-origin: top left;
 }
 
 .option-rotator {
-    transform: rotate(-90deg);
+    transform: rotate(-70deg);
     transform-origin: center;
 }
