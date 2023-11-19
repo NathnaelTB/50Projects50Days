@@ -23,4 +23,24 @@ body {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;   
     color: #efedd6; 
+    position: relative;
+    transition: 0.5s;
+}
+
+.hidden-left {
+    position: relative;
+    right: 1000px;
+}
+
+.hidden-right {
+    position: relative;
+    left: 1000px;
+}
+
+.unhide-left {
+    right: 0;
+}
+
+.unhide-right {
+    left: 0;
 }
