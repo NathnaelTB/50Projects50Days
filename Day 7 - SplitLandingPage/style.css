@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    color: white;
 }
 
 .samsung-overlay {
@@ -62,5 +63,5 @@ button {
 }
 
 .selected {
-    width: 70%;
+    width: 80%;
 }
