@@ -12,7 +12,14 @@ const tada = document.getElementById('tada');
 const victory = document.getElementById('victory');
 const wrong = document.getElementById('wrong');
 
+const sounds = [applause, boo, gasp, tada, victory, wrong];
+
 function playSound(event) {
+    sounds.forEach(sound => {
+        sound.currentTime = 0;
+        sound.pause();
+    });
+
     if(event.target.classList.contains('applause'))
         applause.play();
     else if(event.target.classList.contains('boo'))
