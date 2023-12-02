@@ -36,6 +36,6 @@ body {
     cursor: pointer;
 }
 
-.clicked {
-    transform: scale(0.99);
+#joke{
+    font-size: 1.4rem;
 }
