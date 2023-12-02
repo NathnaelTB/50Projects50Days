@@ -6,8 +6,27 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Event KeyCodes</title>
 </head>
-<body>
-    
+<body onkeydown="displayKeyCode(event)">
+    <div class="start">
+        press any key to get the key code
+    </div>
+    <div class="container">
+        <div class="input">
+            <h3>event.key</h3>
+            <input type="text" id="key" readonly>
+        </div>
+
+        <div class="input">
+            <h3>event.keyCode</h3>
+            <input type="text" id="keyCode" readonly>
+        </div>
+
+        <div class="input">
+            <h3>event.code</h3>
+            <input type="text" id="code" readonly>
+        </div>
+    </div>
+
     <script src="./Event_KeyCode.js"></script>
 </body>
 </html>
