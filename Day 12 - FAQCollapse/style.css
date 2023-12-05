@@ -1,0 +1,40 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #e3e3e3;
+}
+
+.container {
+    width: 60%;
+    text-align: center;
+}
+
+.question-container {
+    border: 1px solid #828282;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.question h3 {
+    text-align: left;
+    width: 80%;
+}
+
+.answer {
+    display: none;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
