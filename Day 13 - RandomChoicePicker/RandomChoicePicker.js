@@ -9,14 +9,24 @@ function displayText(event) {
     const word = event.target.value.split(',');
 
     if(event.keyCode === 13) {
-        console.log('enter is pressed')
+        chooseRandomly(word);
     }
     
     else {
         let wordHTML = '';
-        word.forEach(item => {
-            wordHTML += `<h3>${item}</h3>`;
+        word.forEach((item, index) => {
+            wordHTML += `<h3 id=${index}>` + item  + `</h3>`;
         })
         choices.innerHTML = wordHTML;
     }
 }
+
+function chooseRandomly(word) {
+    // shuffle(word);
+    let randomIndex = Math.floor(Math.random() * word.length) // generates integer between 0 and word.length
+    choices.childNodes[randomIndex].classList.add('chosen');
+}
+
+// function shuffle(word) {
+
+//  }

@@ -32,3 +32,7 @@ body {
     justify-content: center;
     gap: 2.5rem;
 }
+
+.chosen {
+    color: #FFC47E;
+}
