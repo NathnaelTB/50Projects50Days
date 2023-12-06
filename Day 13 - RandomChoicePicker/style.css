@@ -30,12 +30,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-}
-
-.choices h3 {
-    background-color: #B6BBC4;
-    padding: 10px;
-    border-radius: 10px;
-    color: #161A30;
+    gap: 2.5rem;
 }
