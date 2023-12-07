@@ -1,6 +1,7 @@
 * {
     margin: 0;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .upper, .lower {
@@ -41,4 +42,8 @@
     top: 3px;
     font-weight: 700;
     font-size: x-large;
+}
+
+.disappear {
+    display: none;
 }
