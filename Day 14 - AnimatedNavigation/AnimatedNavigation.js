@@ -1,5 +1,6 @@
 const icon = document.getElementById('icon');
-const menu = document.querySelectorAll('.menu');
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('.nav');
 
 icon.addEventListener('click', clickHandler);
 
@@ -9,15 +10,14 @@ function clickHandler(event) {
     if(event.target.classList.contains('fa-xmark')){
         iconClass.remove('fa-xmark');
         iconClass.add('fa-bars');
-        menu.forEach((item) => {
-            item.classList.add('disappear');
-        });
+        menu.classList.add('disappear');
+        nav.classList.add('nav-after');
+
     }
     else if(event.target.classList.contains('fa-bars')) {
         iconClass.remove('fa-bars');
         iconClass.add('fa-xmark');
-        menu.forEach((item) => {
-            item.classList.remove('disappear');
-        });
+        menu.classList.remove('disappear');
+        nav.classList.remove('nav-after');
     }
 }

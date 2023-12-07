@@ -18,6 +18,8 @@
 }
 
 .nav {
+    width: 22rem;
+    height: 4rem;
     background-color: #9EC8B9;
     color: #092635;
     position: absolute;
@@ -27,14 +29,23 @@
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25), 2px 2px 8px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
 }
 
-.nav ul {
+.nav ul, .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+.nav ul {
     padding: 20px;
+}
+
+.nav-after {
+    width: 4rem;
+    height: 4rem;
 }
 
 #icon {
