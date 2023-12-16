@@ -77,6 +77,10 @@ h1 {
     margin: 0;
 }
 
+.bottles:hover {
+    cursor: pointer;
+}
+
 .used-percentage {
     display: grid;
     place-items: center;
