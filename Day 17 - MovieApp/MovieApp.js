@@ -32,8 +32,8 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', option
         rating_div.className = 'rating-div';
 
         let movie_rating = document.createElement('h4');
-        movie_rating.textContent = item.vote_average;
-        movie_rating.style.color = colorize(item.vote_average);
+        movie_rating.textContent = item.vote_average.toFixed(1);
+        movie_rating.style.color = colorize(item.vote_average.toFixed(1));
 
         //appending the elements
         rating_div.appendChild(movie_rating);
@@ -49,12 +49,12 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', option
     .catch(err => console.error(err))
 
 
-    //original_title, poster_path, overview, vote_average
+    // colorizing function
     function colorize(rating) {
         if(rating < 5)
-            return 'green';
+            return '#ff4c4c';
         else if(rating > 4 && rating < 7)
             return 'yellow';
         else 
-            return 'red';
+            return 'lime';
     }
