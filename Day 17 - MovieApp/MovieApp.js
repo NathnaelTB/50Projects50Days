@@ -35,6 +35,19 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', option
         movie_rating.textContent = item.vote_average.toFixed(1);
         movie_rating.style.color = colorize(item.vote_average.toFixed(1));
 
+        let overview_container = document.createElement('div');
+        overview_container.className = 'overview-container';
+
+        let overview_title = document.createElement('h3');
+        overview_title.textContent = 'Overview';
+
+        let overview = document.createElement('p')
+        overview.textContent = item.overview;
+
+        //appending the overview
+        overview_container.appendChild(overview_title);
+        overview_container.appendChild(overview);
+
         //appending the elements
         rating_div.appendChild(movie_rating);
 
@@ -43,6 +56,15 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', option
 
         movie_contianer.appendChild(movie_img);
         movie_contianer.appendChild(data_container);
+        movie_contianer .appendChild(overview_container);
+
+        movie_contianer.addEventListener('mouseenter', () => {
+            overview_container.classList.add('overview-container-display');
+        });
+
+        movie_contianer.addEventListener('mouseleave', () => {
+            overview_container.classList.remove('overview-container-display');
+        });
 
         container.appendChild(movie_contianer);
     }))
