@@ -1,9 +1,11 @@
 body {
+    transition: 0.5s;
     overflow: hidden;
     margin: 0;
-    background-image: url("https://images.pexels.com/photos/417083/pexels-photo-417083.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-image: url("https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2VudGVyfGVufDB8fDB8fH");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .center {
@@ -11,17 +13,17 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 400px;
+    width: 70%;
+    height: 500px;
     background-color: transparent;
-    border: 400px solid rgba(0, 0, 0, 0.5);
+    border: 400px solid rgba(0, 0, 0, 0.6);
 }
 
 .left {
     color: white;
     position: absolute;
     top: 50%;
-    left: 20.5%;
+    left: 10%;
     transform: translate(0, -50%);
     padding: 20px;
     border: solid 2px orange;
@@ -31,7 +33,7 @@ body {
     color: white;
     position: absolute;
     top: 50%;
-    right: 20.5%;
+    right: 10%;
     transform: translate(0, -50%);
     padding: 20px;
     border: solid 2px orange;
