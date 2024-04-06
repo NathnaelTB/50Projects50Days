@@ -1,0 +1,18 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background-image: url("https://images.pexels.com/photos/417083/pexels-photo-417083.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+    border: 400px solid rgba(0, 0, 0, 0.5);
+}
